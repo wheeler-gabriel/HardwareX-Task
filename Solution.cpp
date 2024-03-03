@@ -58,7 +58,7 @@ vector<int> calculateModes(vector<int> nums, vector<int> mode, int n) {
 		for (int j = 0; j < n; j++)
 		{
 			if (i == j) { continue; }
-			//Check how many times the numbers are found in the vector
+			//Check how many times each number is found in the vector
 			if (nums[i] == nums[j])
 			{
 				mode[i]++;
@@ -66,7 +66,7 @@ vector<int> calculateModes(vector<int> nums, vector<int> mode, int n) {
 		}
 	}
 
-	//Check which number is found in the vector the most (could be multiple numbers)
+	//Check which number has the most repetitions in the set (could be multiple numbers)
 	int max = mode[0];
 	for (int i = 1; i < mode.size(); i++)
 	{
@@ -76,7 +76,7 @@ vector<int> calculateModes(vector<int> nums, vector<int> mode, int n) {
 		}
 	}
 
-	//If each number is unique then there is no mode in the set
+	//If each number is unique, then there is no mode in the set
 	if (max != 0) {
 		for (int i = 0; i < mode.size(); i++)
 		{
