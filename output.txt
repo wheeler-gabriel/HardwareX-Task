@@ -1,0 +1,5 @@
+Mean: 5402.22
+Median: 9
+Mode: 1 5 8 
+Even count: 12
+Odd count: 11
